@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nagel Lift Truck, Inc. | Onsite Forklift Service in Griffith, IN</title>
+<meta name="description" content="Family-owned forklift repair, preventative maintenance, rentals, parts and sales in Griffith, Indiana, serving Lake County, Porter County and Northwest Indiana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#133672;--accent:#99ccff;--dark:#344a72;--light:#f3f3f3;
+  --ink:#1b2333;--muted:#5a6578;--line:#dfe3ea;--r:4px;
+  --display:'Lato',system-ui,sans-serif;--body:'Open Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);background:#fff;line-height:1.65;font-size:1rem}
+img{max-width:100%;display:block}
+a{color:var(--primary)}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0 0 .6em;overflow-wrap:anywhere}
+h1{font-size:clamp(2.1rem,5vw,4.2rem);font-weight:900;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:900;color:var(--primary)}
+h3{font-size:1.2rem;font-weight:700;color:var(--primary)}
+p{margin:0 0 1em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+.eyebrow{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:var(--dark);margin-bottom:.8rem;display:flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--accent);border-radius:var(--r)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--display);font-weight:900;font-size:1rem;padding:.9rem 1.5rem;border-radius:var(--r);text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:var(--primary)}
+.btn-accent:hover{background:#fff}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--dark)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(19,54,114,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+.logo img{height:48px;width:auto;object-fit:contain}
+.links{display:flex;gap:1.8rem;list-style:none;margin:0;padding:0}
+.links a{font-family:var(--display);font-weight:700;text-decoration:none;color:var(--ink);font-size:.97rem}
+.links a:hover{color:var(--primary)}
+.nav-right{display:flex;align-items:center;gap:.8rem}
+.nav .call{padding:.65rem 1.1rem;font-size:.95rem}
+.toggle{display:none;background:none;border:2px solid var(--line);border-radius:var(--r);width:46px;height:46px;cursor:pointer;align-items:center;justify-content:center}
+.toggle span,.toggle span::before,.toggle span::after{display:block;width:20px;height:2px;background:var(--primary);position:relative;transition:.2s}
+.toggle span::before,.toggle span::after{content:"";position:absolute;left:0}
+.toggle span::before{top:-6px}.toggle span::after{top:6px}
+.toggle[aria-expanded="true"] span{background:transparent}
+.toggle[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.toggle[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+@media(max-width:900px){
+  .toggle{display:inline-flex}
+  .links{position:absolute;top:74px;left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);display:none;padding:.5rem 0}
+  .links.open{display:flex}
+  .links a{display:block;padding:.85rem 1.25rem}
+  .nav .call .num{display:none}
+}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,var(--primary) 0%,#0f2b5c 100%);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:60px solid rgba(153,204,255,.07);border-radius:50%}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding-top:4.5rem;padding-bottom:4.5rem;position:relative;z-index:1}
+.hero .eyebrow{color:var(--accent)}
+.hero .lead{font-size:1.15rem;color:#dce7f7;max-width:36rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.hero-meta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1.6rem;font-size:.93rem;color:#c3d4ee}
+.hero-meta strong{display:block;font-family:var(--display);font-size:1.6rem;color:#fff;font-weight:900;line-height:1.1}
+.hero-photo{max-width:720px;justify-self:end;width:100%}
+.frame{border-radius:var(--r);overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.35);border:6px solid rgba(255,255,255,.1);aspect-ratio:720/539}
+.frame img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{font-size:.85rem;color:#a9bfe0;margin-top:.7rem}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-top:3rem;padding-bottom:3rem;gap:2rem}.hero-photo{justify-self:start}}
+
+/* BAND */
+.band{background:var(--dark);color:#fff}
+.band .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.1rem;padding-bottom:1.1rem;font-family:var(--display);font-weight:700}
+.band span{display:flex;align-items:center;gap:.55rem}
+.band span::before{content:"";width:8px;height:8px;background:var(--accent);border-radius:var(--r)}
+
+section{padding:5rem 0}
+.sec-head{max-width:46rem;margin-bottom:2.8rem}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+
+/* SERVICES */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.8rem;border-top:4px solid var(--primary);transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 16px 34px rgba(19,54,114,.1);transform:translateY(-3px)}
+.card p{color:var(--muted);margin:0}
+.ico{width:46px;height:46px;border-radius:var(--r);background:#e8f2ff;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
+.ico svg{width:24px;height:24px;stroke:var(--primary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+
+/* WORK */
+.work{background:var(--light)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.tile{background:#fff;border-radius:var(--r);padding:1.4rem;border:1px solid var(--line);min-height:150px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.tile::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--accent)}
+.tile h3{margin:0 0 .3rem;font-size:1.08rem}
+.tile p{margin:0;color:var(--muted);font-size:.92rem}
+@media(max-width:900px){.tiles{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.tiles{grid-template-columns:1fr}}
+.makes{margin-top:2rem;background:var(--primary);color:#fff;border-radius:var(--r);padding:2rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+.makes h3{color:#fff;font-size:1.4rem;margin:0 0 .3rem}
+.makes p{margin:0;color:#c9d8ef}
+
+/* ABOUT */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+.stat{border-radius:var(--r);background:var(--light);padding:1.4rem;border-left:4px solid var(--primary)}
+.stat strong{font-family:var(--display);font-size:2.2rem;font-weight:900;color:var(--primary);display:block;line-height:1}
+.stat span{color:var(--muted);font-size:.92rem}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:1rem}
+.why li{border:1px solid var(--line);border-radius:var(--r);padding:1.2rem 1.3rem 1.2rem 3.2rem;position:relative}
+.why li::before{content:"";position:absolute;left:1.2rem;top:1.45rem;width:14px;height:8px;border-left:3px solid var(--primary);border-bottom:3px solid var(--primary);transform:rotate(-45deg)}
+.why strong{font-family:var(--display);color:var(--primary);display:block;font-size:1.05rem}
+.why span{color:var(--muted);font-size:.95rem}
+@media(max-width:900px){.about .wrap{grid-template-columns:1fr;gap:2rem}}
+
+/* AREA */
+.area{background:linear-gradient(180deg,#0f2b5c,var(--primary));color:#fff}
+.area h2{color:#fff}.area .eyebrow{color:var(--accent)}
+.area .sec-head p{color:#c9d8ef}
+.places{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.place{border:1px solid rgba(153,204,255,.3);border-radius:var(--r);padding:1.6rem;background:rgba(255,255,255,.04)}
+.place h3{color:#fff;margin-bottom:.4rem}
+.place p{margin:0;color:#c9d8ef;font-size:.95rem}
+@media(max-width:800px){.places{grid-template-columns:1fr}}
+
+/* CONTACT */
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.contact-box{background:var(--light);border-radius:var(--r);padding:2rem;border-top:4px solid var(--primary)}
+.contact-box dl{margin:0;display:grid;gap:1.1rem}
+.contact-box dt{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;color:var(--dark)}
+.contact-box dd{margin:.2rem 0 0;font-size:1.05rem}
+.contact-box a{font-weight:700;text-decoration:none}
+.big-tel{font-family:var(--display);font-weight:900;font-size:clamp(1.6rem,4vw,2.2rem)}
+@media(max-width:900px){.contact .wrap{grid-template-columns:1fr}}
+
+footer{background:#0c214a;color:#b9c8e0;padding:3rem 0 2rem;font-size:.93rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem}
+.foot .name{font-family:var(--display);font-weight:900;color:#fff;font-size:1.25rem;margin-bottom:.4rem}
+footer a{color:var(--accent);text-decoration:none}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
+.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:2rem;padding-top:1.2rem;font-size:.85rem}
+
+/* REVEAL */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.card{transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Nagel Lift Truck, Inc. home">
+      <img src="https://nagellift.com/wp-content/uploads/2023/03/nagel-logo-forklift-FIXED.png" alt="Nagel Lift Truck, Inc. logo" width="200" height="48">
+    </a>
+    <ul class="links" id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Who We Serve</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#area">Service Area</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:+12199224469" class="btn btn-primary call" aria-label="Call 219-922-4469">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span class="num">219-922-4469</span>
+      </a>
+      <button class="toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Griffith, Indiana &middot; Family-owned</div>
+      <h1>Onsite forklift service that keeps Northwest Indiana moving.</h1>
+      <p class="lead">Repair, preventative maintenance, rentals, parts and sales for old and new forklifts of all makes and models. When a truck goes down, we come to you and fix it, not just replace it.</p>
+      <div class="ctas">
+        <a href="tel:+12199224469" class="btn btn-accent">Call 219-922-4469</a>
+        <a href="#services" class="btn btn-ghost">See Our Services</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>22 years</strong>in business</div>
+        <div><strong>36+ years</strong>industry experience</div>
+        <div><strong>All makes</strong>&amp; models serviced</div>
+      </div>
+    </div>
+    <figure class="hero-photo" style="margin:0">
+      <div class="frame">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQ9zTeLCieB7qGS81K7VKDENcJ9ei-_PcTZlNNgUD6xBREiHq2i6WKFOEQMt1s_68ej7Qp4IS9lkIuVtXkScIG28v9bTFvZfY4svq3FGTLOZJYPhKT0qfuGQTIY--Gbu1s_qNX=w1600-h1600" alt="Nagel Lift Truck shop in Griffith with an open service bay" width="720" height="539">
+      </div>
+      <figcaption>Our shop at 501 Industrial Dr, Griffith</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="band reveal">
+  <div class="wrap">
+    <span>Onsite repair</span><span>Preventative maintenance</span><span>Rentals</span><span>Parts</span><span>Used &amp; new sales</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">What we do</div>
+      <h2>One local shop for every forklift need</h2>
+      <p>Downtime costs you money. We keep your trucks working with practical service, honest repairs and the equipment to fill a gap when you need it.</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 6.3-6.3"/><path d="M14.7 6.3 9 12l-3-3 5.7-5.7a4 4 0 0 1 3 3z"/></svg></div>
+        <h3>Onsite Forklift Repair</h3>
+        <p>Our techs come to your dock, warehouse or plant floor to diagnose and repair trucks where they work, so you're back up faster.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="1"/><path d="M3 9h18M8 2v4M16 2v4M8 14l2.5 2.5L16 12"/></svg></div>
+        <h3>Preventative Maintenance</h3>
+        <p>Scheduled service that catches small problems before they turn into breakdowns and expensive replacements.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 18V8h8l3 5v5"/><path d="M14 13h4V4M18 18V4"/><circle cx="6.5" cy="18.5" r="2"/><circle cx="12" cy="18.5" r="2"/></svg></div>
+        <h3>Forklift Rentals</h3>
+        <p>Short-term trucks for busy seasons, special projects, or while your own equipment is in for repair.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+        <h3>Parts</h3>
+        <p>The parts you need to keep older and newer trucks running, across all the makes and models we service.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M20 12V7l-8-4-8 4v10l8 4 3-1.5"/><path d="M4 7l8 4 8-4M12 11v10"/><path d="M17 17l2 2 3-4"/></svg></div>
+        <h3>Used Forklift Sales</h3>
+        <p>Dependable used equipment for operations that need a working truck without the cost of new.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></div>
+        <h3>New NOBLELIFT Equipment</h3>
+        <p>New NOBLELIFT material handling equipment, supported by the same local team that services it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Who we work for</div>
+      <h2>Trusted on the floor across every kind of operation</h2>
+      <p>From heavy industry to the corner distributor, we keep lift trucks running for businesses of every size.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile reveal"><h3>Warehouses</h3><p>Keeping racks loaded and orders moving.</p></div>
+      <div class="tile reveal"><h3>Steel Companies</h3><p>Equipment that holds up to demanding work.</p></div>
+      <div class="tile reveal"><h3>Manufacturers</h3><p>Uptime for production lines and shipping.</p></div>
+      <div class="tile reveal"><h3>Grocery</h3><p>Reliable trucks for fast-turn inventory.</p></div>
+      <div class="tile reveal"><h3>Big Box Retail</h3><p>Back-of-house fleets serviced onsite.</p></div>
+      <div class="tile reveal"><h3>Distributors</h3><p>Dock and yard trucks ready every shift.</p></div>
+      <div class="tile reveal"><h3>Small Businesses</h3><p>Same care whether you run one truck or many.</p></div>
+      <div class="tile reveal"><h3>Old &amp; New Fleets</h3><p>Older trucks repaired, not written off.</p></div>
+    </div>
+    <div class="makes reveal">
+      <div>
+        <h3>All makes. All models. Old and new.</h3>
+        <p>We'd rather fix what you already own than talk you into replacing it.</p>
+      </div>
+      <a href="tel:+12199224469" class="btn btn-accent">Talk to a Tech</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">About Nagel Lift Truck</div>
+      <h2>Family-owned, right here in Griffith</h2>
+      <p>Nagel Lift Truck, Inc. is a family-owned material handling company based on Industrial Drive in Griffith, Indiana. We work on old and new forklifts of all makes and models for warehouses, steel companies, manufacturers, grocery, big box stores, distributors and small businesses.</p>
+      <p>Our approach is simple: show up, find the problem, and fix it right. Practical repair comes first, so you aren't paying for a replacement you don't need.</p>
+      <div class="stats">
+        <div class="stat"><strong>22</strong><span>years in business</span></div>
+        <div class="stat"><strong>36+</strong><span>years of industry experience</span></div>
+      </div>
+    </div>
+    <ul class="why reveal">
+      <li><strong>We come to you</strong><span>Onsite repair means less hauling and less downtime for your operation.</span></li>
+      <li><strong>Repair over replacement</strong><span>We fix what can be fixed and give you straight answers when it can't.</span></li>
+      <li><strong>Any make, any age</strong><span>Older and newer trucks of all makes and models are welcome.</span></li>
+      <li><strong>One call covers it</strong><span>Service, maintenance, rentals, parts and sales from one local team.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="area" class="area">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Service area</div>
+      <h2>Serving Lake County, Porter County &amp; Northwest Indiana</h2>
+      <p>Based in Griffith, our service trucks cover the industrial corridor and communities across the region.</p>
+    </div>
+    <div class="places">
+      <div class="place reveal"><h3>Lake County</h3><p>Home base. Our Griffith shop puts us close to plants, warehouses and docks throughout the county.</p></div>
+      <div class="place reveal"><h3>Porter County</h3><p>Onsite repair and preventative maintenance for operations to the east.</p></div>
+      <div class="place reveal"><h3>Northwest Indiana</h3><p>Not sure if you're in range? Give us a call and we'll let you know.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Truck down? Need a rental? Call us.</h2>
+      <p style="color:var(--muted);font-size:1.05rem">Tell us what you're running and what's going on. We'll get a tech headed your way or set you up with the right equipment.</p>
+      <div class="ctas">
+        <a href="tel:+12199224469" class="btn btn-primary">Call 219-922-4469</a>
+        <a href="https://www.facebook.com/nagellift" class="btn btn-primary" style="background:#fff;color:var(--primary);border-color:var(--primary)" target="_blank" rel="noopener">Follow on Facebook</a>
+      </div>
+    </div>
+    <div class="contact-box reveal">
+      <dl>
+        <div><dt>Phone</dt><dd><a class="big-tel" href="tel:+12199224469">219-922-4469</a></dd></div>
+        <div><dt>Shop</dt><dd>501 Industrial Dr<br>Griffith, IN 46319</dd></div>
+        <div><dt>Directions</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=501+Industrial+Dr+Griffith+IN+46319" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="reveal">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="name">Nagel Lift Truck, Inc.</div>
+        <p style="max-width:22rem;margin:0">Family-owned forklift service, rentals, parts and sales in Griffith, Indiana.</p>
+      </div>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Who We Serve</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#area">Service Area</a></li>
+      </ul>
+      <ul>
+        <li><a href="tel:+12199224469">219-922-4469</a></li>
+        <li>501 Industrial Dr, Griffith, IN 46319</li>
+        <li><a href="https://www.facebook.com/nagellift" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="copy">&copy; <span id="yr"></span> Nagel Lift Truck, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t=document.querySelector('.toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',function(){
+    var o=t.getAttribute('aria-expanded')==='true';
+    t.setAttribute('aria-expanded',String(!o));m.classList.toggle('open',!o);
+  });
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){t.setAttribute('aria-expanded','false');m.classList.remove('open');});});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!('IntersectionObserver' in window)||reduce){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
